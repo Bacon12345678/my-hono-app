@@ -1,6 +1,167 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "my-app",
+  "name": "sharktech-dashboard-hono-worker",
   "compatibility_date": "2025-08-03",
-  "main": "./src/index.tsx"
+  "main": "./src/index.tsx",
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "7642065d05364eaf9268454ab45cae96"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "SHARKTECH_BUCKET",
+      "bucket_name": "sharktech"
+    },
+    {
+      "binding": "SHARKMKT_BUCKET",
+      "bucket_name": "sharkmkt"
+    },
+    {
+      "binding": "ENGELAD_BUCKET",
+      "bucket_name": "engelad"
+    },
+    {
+      "binding": "SIMUTECH_BUCKET",
+      "bucket_name": "simutech"
+    },
+    {
+      "binding": "MINPLYTECH_BUCKET",
+      "bucket_name": "minplytech"
+    },
+    {
+      "binding": "RUIFEN_BUCKET",
+      "bucket_name": "ruifen"
+    },
+    {
+      "binding": "R2_037598555_BUCKET",
+      "bucket_name": "037598555"
+    },
+    {
+      "binding": "NEWFLOWERDENTAL_BUCKET",
+      "bucket_name": "newflowerdental"
+    },
+    {
+      "binding": "AGROWIN_BUCKET",
+      "bucket_name": "agrowin"
+    },
+    {
+      "binding": "KEEPCOOL_BUCKET",
+      "bucket_name": "keepcool"
+    },
+    {
+      "binding": "RAINCLOUD_BUCKET",
+      "bucket_name": "raincloud"
+    },
+    {
+      "binding": "JUNPON_BUCKET",
+      "bucket_name": "junpon"
+    },
+    {
+      "binding": "FEPOTEC_BUCKET",
+      "bucket_name": "fepotec"
+    },
+    {
+      "binding": "R2_3KEEGO_BUCKET",
+      "bucket_name": "3keego"
+    },
+    {
+      "binding": "KMO_BUCKET",
+      "bucket_name": "kmo"
+    },
+    {
+      "binding": "TAICHUNGZHONGTIAN_BUCKET",
+      "bucket_name": "taichungzhongtian"
+    },
+    {
+      "binding": "ARTDEEPFIND_BUCKET",
+      "bucket_name": "artdeepfind"
+    },
+    {
+      "binding": "WINNERWATER_BUCKET",
+      "bucket_name": "winnerwater"
+    },
+    {
+      "binding": "BLUEWAX_BUCKET",
+      "bucket_name": "bluewax"
+    },
+    {
+      "binding": "INTERIORDECOROOM_BUCKET",
+      "bucket_name": "interiordecoroom"
+    },
+    {
+      "binding": "HERBCARE_BUCKET",
+      "bucket_name": "herbcare"
+    },
+    {
+      "binding": "LINKWARE_BUCKET",
+      "bucket_name": "linkware"
+    },
+    {
+      "binding": "ALLSHINE_BUCKET",
+      "bucket_name": "allshine"
+    },
+    {
+      "binding": "JAVEYUAN_BUCKET",
+      "bucket_name": "javeyuan"
+    },
+    {
+      "binding": "WOW3C_BUCKET",
+      "bucket_name": "wow3c"
+    },
+    {
+      "binding": "HOUSHENG_BUCKET",
+      "bucket_name": "housheng"
+    },
+    {
+      "binding": "DRYAOYAO_BUCKET",
+      "bucket_name": "dryaoyao"
+    },
+    {
+      "binding": "STARRATEDSAUCE_BUCKET",
+      "bucket_name": "starratedsauce"
+    },
+    {
+      "binding": "MABAO_BUCKET",
+      "bucket_name": "mabao"
+    },
+    {
+      "binding": "PMSALON_BUCKET",
+      "bucket_name": "pmsalon"
+    },
+    {
+      "binding": "CYTOPACX_BUCKET",
+      "bucket_name": "cytopacx"
+    },
+    {
+      "binding": "JAVEXGLOBAL_BUCKET",
+      "bucket_name": "javexglobal"
+    },
+    {
+      "binding": "EASYWAX_BUCKET",
+      "bucket_name": "easywax"
+    },
+    {
+      "binding": "SUNLIGHTLIFE_BUCKET",
+      "bucket_name": "sunlightlife"
+    },
+    {
+      "binding": "LAWSOP_BUCKET",
+      "bucket_name": "lawsop"
+    },
+    {
+      "binding": "AKMELIONS_BUCKET",
+      "bucket_name": "akmelions"
+    }
+  ],
+  "vars": {
+    "APP_R2_BINDINGS": "{\"sharktech\":\"SHARKTECH_BUCKET\",\"sharkmkt\":\"SHARKMKT_BUCKET\",\"engelad\":\"ENGELAD_BUCKET\",\"simutech\":\"SIMUTECH_BUCKET\",\"minplytech\":\"MINPLYTECH_BUCKET\",\"ruifen\":\"RUIFEN_BUCKET\",\"037598555\":\"R2_037598555_BUCKET\",\"newflowerdental\":\"NEWFLOWERDENTAL_BUCKET\",\"agrowin\":\"AGROWIN_BUCKET\",\"keepcool\":\"KEEPCOOL_BUCKET\",\"raincloud\":\"RAINCLOUD_BUCKET\",\"junpon\":\"JUNPON_BUCKET\",\"fepotec\":\"FEPOTEC_BUCKET\",\"3keego\":\"R2_3KEEGO_BUCKET\",\"kmo\":\"KMO_BUCKET\",\"taichungzhongtian\":\"TAICHUNGZHONGTIAN_BUCKET\",\"artdeepfind\":\"ARTDEEPFIND_BUCKET\",\"winnerwater\":\"WINNERWATER_BUCKET\",\"bluewax\":\"BLUEWAX_BUCKET\",\"interiordecoroom\":\"INTERIORDECOROOM_BUCKET\",\"herbcare\":\"HERBCARE_BUCKET\",\"linkware\":\"LINKWARE_BUCKET\",\"allshine\":\"ALLSHINE_BUCKET\",\"javeyuan\":\"JAVEYUAN_BUCKET\",\"wow3c\":\"WOW3C_BUCKET\",\"housheng\":\"HOUSHENG_BUCKET\",\"dryaoyao\":\"DRYAOYAO_BUCKET\",\"starratedsauce\":\"STARRATEDSAUCE_BUCKET\",\"mabao\":\"MABAO_BUCKET\",\"pmsalon\":\"PMSALON_BUCKET\",\"cytopacx\":\"CYTOPACX_BUCKET\",\"javexglobal\":\"JAVEXGLOBAL_BUCKET\",\"easywax\":\"EASYWAX_BUCKET\",\"sunlightlife\":\"SUNLIGHTLIFE_BUCKET\",\"lawsop\":\"LAWSOP_BUCKET\",\"akmelions\":\"AKMELIONS_BUCKET\"}"
+  },
+  "images": {
+    "binding": "IMAGES"
+  },
+  "compatibility_flags": [
+    "global_fetch_strictly_public"
+  ]
 }

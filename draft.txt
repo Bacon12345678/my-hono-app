@@ -1,0 +1,10 @@
+const kv_endpoint = `${domain}/api/v1/environment/getMYAPP`;
+    const newData = fetch.api;
+    kv.put(kv_endpoint, newData);
+}
+
+格式: ${domain}/api/v1/environment/getMYAPP 
+
+
+抓kv的資料就在開頭+kv
+'kv/getMyApp/:id
